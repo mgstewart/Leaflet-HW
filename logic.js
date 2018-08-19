@@ -17,9 +17,6 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 // Assembling API query URL
 var url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
-// Declare chloropleth
-var chloropleth;
-
 // Create helper function to return colors:
 function getColor(d) {
   return d > 4  ? '#FF0000' :
